@@ -18,3 +18,5 @@
 // });
 
 Route::get('/', 'DefaultController@index');
+
+Route::get('/admin', 'PanelController@index');
