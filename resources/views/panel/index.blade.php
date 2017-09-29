@@ -3,20 +3,50 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
+        <div class="col-md-12">
 
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
+            <div class="bs-example" data-example-id="panel-without-body-with-table">
+                <div class="panel panel-default">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Card UID</th>
+                                    <th>Status</th>
+                                    <th width="10%">&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Bernardo Amaral</td>
+                                    <td>02 29 85 59</td>
+                                    <td>
+                                        <span class="badge badge-success">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-danger btn-sm" role="button">Disable</a>
+                                    </td>
+                                </tr>
 
-                    You are logged in!
+                                <tr>
+                                    <td>John Doe</td>
+                                    <td>67 12 34 89</td>
+                                    <td>
+                                        <span class="badge badge-danger">Inactive</span>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-success btn-sm" role="button">Enable</a>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
+
+
         </div>
     </div>
 </div>
