@@ -15,7 +15,7 @@ class DefaultController extends Controller
 
         return [
             'access' => true,
-        ]; 
+        ];
     }
 
 }
