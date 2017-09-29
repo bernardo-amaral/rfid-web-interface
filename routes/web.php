@@ -11,12 +11,12 @@
 |
 */
 
-// Route::get('/', function () {
-//     return [
-//         'access' => true
-//     ];
-// });
+Auth::routes();
 
-Route::get('/', 'DefaultController@index');
+Route::get('/', 'DefaultController@index')->name('home');
 
-Route::get('/admin', 'PanelController@index');
+Route::get('/adminfree', 'PanelController@index');
+
+Route::group(['middleware' => ['auth']], function() {
+    Route::get('/admin', 'PanelController@index');
+});
