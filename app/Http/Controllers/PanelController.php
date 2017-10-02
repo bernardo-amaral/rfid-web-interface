@@ -33,6 +33,7 @@ class PanelController extends Controller
     public function saveUser(Request $request)
     {
         $data = $request->all();
+        dd($data);
         $user = new \App\User();
         $user->name = $data['name'];
         $user->password = Hash::make($data['password']);
