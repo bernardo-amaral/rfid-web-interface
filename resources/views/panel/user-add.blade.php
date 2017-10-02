@@ -23,7 +23,7 @@
 
                 <div class="form-group">
                     <label for="rfid">RFID ID</label>
-                    <input type="rfid" class="form-control" id="rfid" name="rfid" aria-describedby="rfidHelp" placeholder="Enter rfid">
+                    <input type="text" class="form-control" id="rfid" name="rfid" aria-describedby="rfidHelp" placeholder="Enter rfid">
                     <small id="rfidHelp" class="form-text text-muted">RFID</small>
                 </div>
 
@@ -34,7 +34,7 @@
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="checkbox" name="active" class="form-check-input">Active
+                        <input type="checkbox" name="active" value="1" class="form-check-input">Active
                     </label>
                 </div>
 

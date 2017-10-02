@@ -33,12 +33,11 @@ class PanelController extends Controller
     public function saveUser(Request $request)
     {
         $data = $request->all();
-        dd($data);
         $user = new \App\User();
         $user->name = $data['name'];
         $user->password = Hash::make($data['password']);
         $user->email = $data['email'];
-        $user->active = $data['active'];
+        $user->active = (isset($data['active'])) ? true : false;
         $user->rfidkey = $data['rfid'];
         $user->save();
         return redirect()->route('userList');
