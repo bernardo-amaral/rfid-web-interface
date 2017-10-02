@@ -11,7 +11,7 @@ class DefaultController extends Controller
      */
     public function checkRfid($rfid)
     {
-        $user = \App\User::find(['rfidkey' => $rfid, 'active' => true]);
+        $user = \App\User::find(['rfidkey' => $rfid, 'active' => true])->first();
         dd($user);
         return [
             'rfid' => $rfid,
