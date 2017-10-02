@@ -18,7 +18,19 @@
                                 </tr>
                             </thead>
                             <tbody>
+                            @foreach ($users as $user)
                                 <tr>
+                                    <td>{{ $user->name }}</td>
+                                    <td>{{ $user->rfidkey }}</td>
+                                    <td>
+                                        <span class="badge badge-success">Active</span>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-danger btn-sm" role="button">Disable</a>
+                                    </td>
+                                </tr>
+                            @endforeach
+                                {{--  <tr>
                                     <td>Bernardo Amaral</td>
                                     <td>02 29 85 59</td>
                                     <td>
@@ -38,7 +50,7 @@
                                     <td>
                                         <a href="#" class="btn btn-success btn-sm" role="button">Enable</a>
                                     </td>
-                                </tr>
+                                </tr>  --}}
 
                             </tbody>
                         </table>
