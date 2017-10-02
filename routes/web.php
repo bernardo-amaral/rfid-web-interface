@@ -17,6 +17,7 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/', 'PanelController@index')->name('home');
     Route::get('/admin', 'PanelController@index')->name('userList');
     Route::get('/admin/user/add', 'PanelController@addUser')->name('userAdd');
+    Route::get('/admin/user/save', 'PanelController@saveUser')->name('userSave');
     Route::get('/admin/user/enable/{id}', 'PanelController@enableUser');
     Route::get('/admin/user/disable/{id}', 'PanelController@disableUser');
 });

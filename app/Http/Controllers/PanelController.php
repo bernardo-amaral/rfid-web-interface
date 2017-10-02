@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 
 class PanelController extends Controller
 {
@@ -24,6 +25,22 @@ class PanelController extends Controller
     {
         $data = $request->all();
         return view('panel.user-add');
+    }
+    /**
+     * User Add page
+     * @return view
+     */
+    public function saveUser(Request $request)
+    {
+        $data = $request->all();
+        $user = new \App\User();
+        $user->name = $data['name'];
+        $user->password = Hash::make($data['password']);
+        $user->email = $data['email'];
+        $user->active = $data['active'];
+        $user->rfidkey = $data['rfid'];
+        $user->save();
+        return redirect()->route('userList');
     }
 
 
