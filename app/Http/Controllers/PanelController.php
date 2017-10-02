@@ -17,6 +17,17 @@ class PanelController extends Controller
     }
 
     /**
+     * User Add page
+     * @return view
+     */
+    public function addUser(Request $request)
+    {
+        $data = $request->all();
+        return view('panel.user-add');
+    }
+
+
+    /**
      * EnableUser
      * @return response
      */
