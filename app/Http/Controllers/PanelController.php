@@ -13,7 +13,7 @@ class PanelController extends Controller
     {
         $data = $request->all();
 
-        $users = []; //App\User::all();
+        $users = \App\User::all();
 
         return view('panel.index', compact('users'));
     }
