@@ -6,7 +6,9 @@
         <div class="col-md-12">
 
             <div class="row">
-                <a href="/admin/user/add" class="btn btn-primary btn-sm" role="button">New user</a>
+                <div class="col-md-12">
+                    <a href="/admin/user/add" class="btn btn-primary btn-sm" role="button">New user</a>
+                <div>
             <div>
 
             <div class="bs-example" data-example-id="panel-without-body-with-table">
