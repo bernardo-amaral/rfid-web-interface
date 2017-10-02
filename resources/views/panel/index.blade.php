@@ -31,9 +31,9 @@
                                     </td>
                                     <td>
                                         @if ($user->active)
-                                            <a href="#" class="btn btn-danger btn-sm" role="button">Disable</a>
+                                            <a href="/admin/user/disable/{{$user->id}}" class="btn btn-danger btn-sm" role="button">Disable</a>
                                         @else
-                                            <a href="#" class="btn btn-success btn-sm" role="button">Enable</a>
+                                            <a href="/admin/user/enable/{{$user->id}}" class="btn btn-success btn-sm" role="button">Enable</a>
                                         @endif
                                     </td>
                                 </tr>
