@@ -13,7 +13,9 @@ class PanelController extends Controller
     {
         $data = $request->all();
 
-        return view('panel.index');
+        $users = App\User::all();
+
+        return view('panel.index', compact('users'));
     }
 
 }
