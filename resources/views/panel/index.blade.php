@@ -5,6 +5,8 @@
     <div class="row">
         <div class="col-md-12">
 
+            <a href="/register" class="btn btn-primary btn-sm" role="button">New user</a>
+
             <div class="bs-example" data-example-id="panel-without-body-with-table">
                 <div class="panel panel-default">
                     <div class="table-responsive">
