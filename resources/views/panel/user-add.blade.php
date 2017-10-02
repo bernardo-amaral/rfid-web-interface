@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-12">
 
-            <form action="/admin/user/save" method="post">
+            <form action="/admin/user/save" method="post" autocomplete="off">
 
                 {{ csrf_field() }}
 
