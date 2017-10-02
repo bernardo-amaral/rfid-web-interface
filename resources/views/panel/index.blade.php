@@ -23,35 +23,21 @@
                                     <td>{{ $user->name }}</td>
                                     <td>{{ $user->rfidkey }}</td>
                                     <td>
-                                        <span class="badge badge-success">Active</span>
+                                        @if ($user->active)
+                                            <span class="badge badge-success">Active</span>
+                                        @else
+                                            <span class="badge badge-danger">Inactive</span>
+                                        @endif
                                     </td>
                                     <td>
-                                        <a href="#" class="btn btn-danger btn-sm" role="button">Disable</a>
+                                        @if ($user->active)
+                                            <a href="#" class="btn btn-danger btn-sm" role="button">Disable</a>
+                                        @else
+                                            <a href="#" class="btn btn-success btn-sm" role="button">Enable</a>
+                                        @endif
                                     </td>
                                 </tr>
                             @endforeach
-                                {{--  <tr>
-                                    <td>Bernardo Amaral</td>
-                                    <td>02 29 85 59</td>
-                                    <td>
-                                        <span class="badge badge-success">Active</span>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-danger btn-sm" role="button">Disable</a>
-                                    </td>
-                                </tr>
-
-                                <tr>
-                                    <td>John Doe</td>
-                                    <td>67 12 34 89</td>
-                                    <td>
-                                        <span class="badge badge-danger">Inactive</span>
-                                    </td>
-                                    <td>
-                                        <a href="#" class="btn btn-success btn-sm" role="button">Enable</a>
-                                    </td>
-                                </tr>  --}}
-
                             </tbody>
                         </table>
                     </div>
