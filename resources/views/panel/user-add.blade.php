@@ -11,30 +11,30 @@
 
                 <div class="form-group">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="User Name">
+                    <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="User Name" autocomplete="off">
                     <small id="nameHelp" class="form-text text-muted">Complete Name</small>
                 </div>
 
                 <div class="form-group">
                     <label for="email">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter email" autocomplete="off">
                     <small id="emailHelp" class="form-text text-muted">Email address</small>
                 </div>
 
                 <div class="form-group">
                     <label for="rfid">RFID ID</label>
-                    <input type="text" class="form-control" id="rfid" name="rfid" aria-describedby="rfidHelp" placeholder="Enter rfid">
+                    <input type="text" class="form-control" id="rfid" name="rfid" aria-describedby="rfidHelp" placeholder="Enter rfid" autocomplete="off">
                     <small id="rfidHelp" class="form-text text-muted">RFID</small>
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
-                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password" autocomplete="off">
                 </div>
 
                 <div class="form-check">
                     <label class="form-check-label">
-                        <input type="checkbox" name="active" value="1" class="form-check-input">Active
+                        <input type="checkbox" name="active" value="1" class="form-check-input" autocomplete="off">Active
                     </label>
                 </div>
 
