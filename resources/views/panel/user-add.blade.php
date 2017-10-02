@@ -7,6 +7,8 @@
 
             <form action="/admin/user/save" method="post">
 
+                {{ csrf_field() }}
+
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" class="form-control" id="name" name="name" aria-describedby="nameHelp" placeholder="User Name">
