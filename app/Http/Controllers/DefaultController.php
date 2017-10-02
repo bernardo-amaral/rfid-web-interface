@@ -9,11 +9,10 @@ class DefaultController extends Controller
      * Index page
      * @return view
      */
-    public function index(Request $request)
+    public function checkRfid($rfid)
     {
-        $data = $request->all();
-
         return [
+            'rfid' => $rfid,
             'access' => true,
         ];
     }
