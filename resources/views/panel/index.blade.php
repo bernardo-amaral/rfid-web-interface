@@ -7,7 +7,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <a href="/admin/user/add" class="btn btn-primary btn-sm" role="button">New user</a>
+                    <a href="/admin/user/add" class="btn btn-primary btn-sm" style="margin: 10px 0 10px 0" role="button">New user</a>
                 <div>
             <div>
 
