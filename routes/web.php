@@ -15,8 +15,6 @@ Auth::routes();
 
 Route::get('/', 'DefaultController@index')->name('home');
 
-Route::get('/adminfree', 'PanelController@index');
-
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/admin', 'PanelController@index');
-});
+})->name('userList');

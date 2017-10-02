@@ -18,4 +18,12 @@ class PanelController extends Controller
         return view('panel.index', compact('users'));
     }
 
+    public function enableUser($id)
+    {
+        $user = \App\User::find($id);
+        $user->active = true;
+        $user->save();
+        return redirect()->route('userList');
+    }
+
 }
